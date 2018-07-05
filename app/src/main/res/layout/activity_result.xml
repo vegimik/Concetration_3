@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Result"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="GAME OVER!"
+        android:layout_marginTop="40dp"
+        android:textSize="40sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="RESULT:"
+        android:layout_marginTop="50dp"
+        android:textSize="30sp"/>
+    <TextView
+        android:id="@+id/scoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="CPU: 0       Player: 0"
+        android:textSize="30sp"
+        android:layout_marginTop="0dp"/>
+    <TextView
+        android:id="@+id/highScoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="9dp"
+        android:padding="15dp"
+        android:background="@drawable/button_start_menu"
+        android:text="Try Again"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:onClick="tryAgain"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/button_start_menu"
+        android:padding="15dp"
+        android:text="Menu"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:onClick="backToMeny"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:padding="15dp"
+        android:background="@drawable/button_start_menu"
+        android:text="Share"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:onClick="share"/>
+
+</LinearLayout>
